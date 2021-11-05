@@ -67,7 +67,6 @@ namespace Template.RealWorld
             categories.Add("Purple");
             categories.Add("White");
             categories.Add("Black");
-            categories.Add("Lin Lập Kiến");
         }
 
         public override void Process(int top)
