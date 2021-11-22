@@ -6,21 +6,21 @@ namespace demo2
 {
     public class WoodenHouse : HouseTemplate
     {
-        protected override void BuildFoundation()
+        protected override void BuildWall()
         {
-            Console.WriteLine("Building foundation with cement, iron rods, wood and sand");
+            Console.WriteLine("Building wood wall");
         }
-        protected override void BuildPillars()
+        protected override void BuildDoor()
         {
-            Console.WriteLine("Building wood Pillars with wood coating");
-        }
-        protected override void BuildWalls()
-        {
-            Console.WriteLine("Building Wood Walls");
+            Console.WriteLine("Building wood door");
         }
         protected override void BuildWindows()
         {
             Console.WriteLine("Building Wood Windows");
+        }
+        protected override void BuildRoof()
+        {
+            Console.WriteLine("Building Wood Roof");
         }
     }
 }

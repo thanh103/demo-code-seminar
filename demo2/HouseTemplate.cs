@@ -9,16 +9,16 @@ namespace demo2
         // Template method defines the sequence for building a house
         public void BuildHouse()
         {
-            BuildFoundation();
-            BuildPillars();
-            BuildWalls();
+            BuildWall();
+            BuildDoor();
             BuildWindows();
+            BuildRoof();
             Console.WriteLine("House is built");
         }
         // Methods to be implemented by subclasses
-        protected abstract void BuildFoundation();
-        protected abstract void BuildPillars();
-        protected abstract void BuildWalls();
+        protected abstract void BuildWall();
+        protected abstract void BuildDoor();
         protected abstract void BuildWindows();
+        protected abstract void BuildRoof();
     }
 }
